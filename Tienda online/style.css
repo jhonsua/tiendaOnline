@@ -1,0 +1,259 @@
+header{
+    background: white;
+    height: 20%;
+    
+   
+}
+.mb-3{
+    margin: 20px;
+}
+#botonEnviar{
+    margin-right: 240px;
+    width: 150px;
+}
+
+#contacto{
+    width: 600px;
+    margin-top: 30px;
+    border: 1px solid gray;
+    border-radius: 5px;
+ 
+}
+#log > img{
+    height: 100px;
+}
+
+#search-btn{
+    margin-top: 30px;
+}
+#search-input{
+    width: 400px;
+    height: 50px;
+    margin: 10px;
+    margin-top: 30px;
+}
+#form{
+    display: flex;
+    
+    
+}
+.container{
+    display: flex;
+    justify-content:space-between;
+}
+.first{
+    
+    background: white;
+    margin: 10px;
+}
+.categorias{
+    display: inline;
+}
+#mostrarContenido{
+    width: 1300px;
+    display: flex;
+    flex-wrap: wrap;
+    
+ 
+}
+.filter {
+    display: flex;
+    margin: 10px;
+    padding-inline: 5px;  
+    padding-top: 2px;  
+    background: rgb(85, 149, 217);
+    height: 30px;
+    
+    border-radius: 10px;
+    border-color: antiquewhite;
+  
+}
+
+.btn-danger {
+   margin-left: 10px;
+   padding-top: 1px;
+   padding-inline: 8px;
+   height: 25px;
+   font-size: 0.8em;
+
+  
+   
+}
+
+#filtro{
+    display: flex;
+    margin: 10px;
+   
+  
+}
+.card-img-top{
+    height: 300px;
+    width: 310px;
+    padding-left: 5px;
+    padding-top: 5px;
+   
+}
+.nav{
+    background: white;
+     height: 40px;
+    display: flex;
+    border-bottom: 3px solid rgb(85, 149, 217);
+   
+
+}
+
+.iconos{
+    width: 50px; 
+    border-radius: 3px;
+    display: flex;
+
+}
+.submenu {
+    position: relative;
+ 
+
+}
+.borrar-articulo{
+    background-color: red;
+    border-radius: 50%;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+#descuento{
+    text-decoration: line-through;
+}
+th{
+    font-size: medium;
+    padding: 10px;
+}
+
+.submenu #carrito{
+    display: none;
+}
+
+#vaciar-carrito{
+    bottom: 20px; 
+    position: absolute;  
+}
+.submenu:hover #carrito{
+    display: block;
+    position: absolute;
+    right:0;
+    border: 2px solid;
+    border-radius: 5px;
+    border-color: black;
+    top:100%;
+    z-index: 1;
+    background-color: white;
+    padding: 20px;
+    min-height: 400px;
+    min-width: 400px;
+}
+.card{
+    margin: 5px;
+}
+.icon{
+    display: flex
+}
+ul.tabs{
+    list-style: none;
+
+}
+#tab{
+    display: flex;
+    justify-content: center;
+}
+
+.tab-text{
+    margin-left: 8px;
+    
+}
+
+ul.tabs > li > a{
+     color: black;
+     text-decoration: none;
+     font-size: 20px;
+}
+
+
+.acti{
+    background: rgb(85, 149, 217);
+       color: red;
+       padding: 5px;
+       border-top-left-radius: 10px;
+       border-top-right-radius: 10px;
+}
+.tab-content{
+    margin-inline: 80px;
+}
+
+#sesion{
+   font-size: 35px;
+   padding: 20px;
+   color:black;
+   list-style: none;
+}
+
+
+
+.filtros{
+    width: 400px;
+    padding: 20px;
+}
+.imgs-c{
+    height: 500px;  
+}
+#restaurant{
+    display: flex;
+    padding: 30px;
+   
+}
+#home-tab{
+    margin-left: 80px;
+}
+#novedades{
+    padding: 0px;
+    margin: 0px;
+}
+.secciones{
+    margin-inline: 40px;
+    display: flex;
+}
+
+
+
+@media (max-width: 500px) {
+    .container{
+        background: black;
+        flex-direction: column;
+    }
+    #formulario{
+        flex-direction: column;
+    }
+    #search-input{
+        width: auto;
+        height: auto;
+        margin: 10px;
+        margin-top: 30px;
+    }
+    #search-btn{
+        width: auto;
+        height: auto;
+        margin: 10px;
+        margin-top: 30px;
+    }
+   
+}
+@media (max-width: 800px) {
+    #search-input{
+        width: auto;
+        height: auto;
+        margin: 10px;
+        margin-top: 30px;
+    }
+}
+
+/* wl padding es interno y el margin es externo /*

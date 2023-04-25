@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <title>Tienda online</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+    <header id="header" class = "header">
+        <div  class= "container">
+            <div class="first" id="log"> 
+                <img src="img/logo.jpg"> 
+            </div>
+            <div class="first" id="busqueda">
+               <form id="form" class="form">
+                 
+                <input class="form-control form-control-sm" id="search-input" type="text" placeholder="Que buscas?" aria-label=".form-control-sm example">
+                <button type="submit" class="btn btn-dark mb-3 bi bi-search" id="search-btn"></button>
+                 
+
+               </form>
+            </div>
+            <div class="first" id="cuenta">  
+           
+
+                    
+                    <ul class="icon">
+                      <li id="sesion" class="bi bi-person-circle ">
+                     
+                      </li>
+                      <li class="submenu bi bi-cart3" id="sesion">
+                              
+                              <div id="carrito">
+                                      
+                                      <table id="lista-carrito" class="u-full-width">
+                                          <thead>
+                                              <tr>
+                                                  <th>Imagen</th>
+                                                  <th>Nombre</th>
+                                                  <th>Precio</th>
+                                                  <th>Cantidad</th>
+                                                  <th></th>
+                                              </tr>
+                                          </thead>
+                                          <tbody></tbody>
+                                      </table>
+  
+                                      <a href="#" id="vaciar-carrito" class=" btn btn-secondary button u-full-width">Vaciar Carrito</a>
+                              </div>
+                      </li>
+                  </ul>
+                    
+                
+
+            </div>
+        </div>
+        
+      <div>
+
+  
+ 
+    </header>
+
+    <div class="nav">
+      <ul class="tabs">
+        <li id="select-tab" class="acti"><a  href="#"><span class="bi bi-house"></span><span class="tab-text">Home</span></a></li>
+      </ul>
+      <ul class="tabs">
+        <li id="select-tab"><a href="#"><span class="bi bi-cup-straw"></span><span class="tab-text">Restaurantes</span></a></li>
+      </ul>
+      <ul class="tabs">
+        <li id="select-tab"><a href="#"><span class="bi bi-bi bi-cart4"></span><span class="tab-text">Licores</span></a></li>
+      </ul>
+      <ul class="tabs">
+        <li id="select-tab"><a href="#"><span class="bi bi-shop"></span><span class="tab-text">Mercado</span></a></li>
+      </ul> <ul class="tabs">
+        <li id="select-tab"><a href="#"><span class="bi bi-envelope-paper"></span><span class="tab-text">Contactanos</span></a></li>
+      </ul>
+    </div>
+  
+  
+    <div class="secciones">
+    
+
+      <div id="tab" class="carousel slide" data-bs-ride="carousel">
+        
+        <div class="carousel-inner">
+          <div class="carousel-item active" >
+            <a href="" target="_blank" >
+            <img src="img/1.png" class="d-block w-100 imgs-c"  alt="No disponible">
+            <a>
+          </div>
+         
+          <div class="carousel-item">
+            <a href="" target="_blank">
+            <img src="img/2.png" class="d-block w-100 imgs-c " alt="...">
+          </a>
+          </div>
+          <div class="carousel-item">
+            <a href="" target="_blank">
+            <img src="img/3.png" class="d-block w-100 imgs-c " alt="...">
+            </a>
+          </div>
+          <div class="carousel-item">
+            <a href="" target="_blank">
+            <img src="img/4.png" class="d-block w-100 imgs-c" alt="...">
+          <a>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carrusel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carrusel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    
+    <div id="tab" class="d-none">
+      <div class="list-group filtros"> 
+        <h1 class= "bi bi-sliders2" > Filtrar</h1>
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button id='restaurant' class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Restaurantes
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <div class="list-group">
+                  <button type="button" class="list-group-item list-group-item-action" aria-current="true"> Chilis</button>
+                  <button type="button" class="list-group-item list-group-item-action">Cielito Lindo</button>
+                  <button type="button" class="list-group-item list-group-item-action">La tapa</button>
+               
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button id='price' class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Precio
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <label for="customRange3" class="form-label"> $0.0</label>
+                  <input type="range" class="form-range" min="0" max="5" step="1" id="customRange3">
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button id='time' class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Tiempo de entrega
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                
+
+                <div class="list-group">
+                  <button type="button" class="list-group-item list-group-item-action" aria-current="true"> 0 - 25 min</button>
+                  <button type="button" class="list-group-item list-group-item-action">25 - 30 min</button>
+                  <button type="button" class="list-group-item list-group-item-action">30 - 45 min</button>
+               
+                </div>
+              </div>
+            </div>
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFour">
+                <button id='score' class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  Valoraciones
+                </button>
+              </h2>
+              <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  
+                  <button type="button" class="list-group-item list-group-item-action"> <p class="bi bi-star-fill"></p> 4.5 - 5</button>
+                  <button type="button" class="list-group-item list-group-item-action"> <p class=" bi-star-half"></p> 4.0 - 4.5 </button>
+                  <button type="button" class="list-group-item list-group-item-action"> <p class=" bi bi-star"></p> 3.5 - 4.0 </button>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFive">
+                <button id='categories' class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                  Categorias
+                </button>
+              </h2>
+              <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  
+                  <button type="button" class="list-group-item list-group-item-action">Hamburguesas</button>
+                  <button type="button" class="list-group-item list-group-item-action">Perros</button>
+                  <button type="button" class="list-group-item list-group-item-action">Mexicana</button>
+                  <button type="button" class="list-group-item list-group-item-action">Bebidas</button>
+                </div>
+              </div>
+            </div>
+            
+            
+
+            </div>
+
+          </div>
+        </div>
+  
+   
+    
+
+      <div id="contenido">
+      <div id="filtro" >
+
+      </div>
+      <div id="mostrarContenido" class="card-deck"> 
+        
+        <!-- <div class="card" style="width: 18rem;">
+          
+          <img src="Basedatos/Restaurantes/Latapa/Hamburguesas/ham-doble.jpg" class="card-img-top" alt="No disponible">
+          <div class="card-body">
+            <div class="icon">
+            <img src="Basedatos/Restaurantes/Latapa/icono.jpg" class="iconos"  alt=""><h5 class="card-title">Hamburguesa Doble </h5>
+          </div>
+            <p class="card-text">Dos carnes de 150g queso cherdar verduras y pepinillos en salsa de la casa</p>
+            <h5 class="card-title">  $16.900 </h5>
+            <a href="#" class="btn btn-primary agregarCarrito" data-id="1">Añadir al carrito </a>
+          </div>
+        </div>
+
+
+        <div class="card" style="width: 18rem;">
+          
+          <img src="Basedatos/Restaurantes/CielitoLindo/Perros/perro-combo.jpg" class="card-img-top" alt="No disponible">
+          <div class="card-body">
+            <div class="icon">
+            <img src="Basedatos/Restaurantes/CielitoLindo/icono.jpg" class="iconos"  alt=""><h5 class="card-title">Combo perro especial + Gaseosa </h5>
+          </div>
+            <p class="card-text">Delicioso perro especial, salchicha americana queso pollo desmechado salsas con gaseosa personal y papas fritas</p>
+            <h5 id="descuento" class="card-title">$19.900 </h5>   <h5 class="card-title">  $14.900 </h5>
+            <a href="#" class="btn btn-primary agregarCarrito" data-id="2" >Añadir al carrito </a>
+          </div>
+        </div>
+
+
+
+        <div class="card" style="width: 18rem;">
+          
+          <img src="Basedatos/Restaurantes/Chilis/Carnes/churrasco.jpg" class="card-img-top" alt="No disponible">
+          <div class="card-body">
+            <div class="icon">
+            <img src="Basedatos/Restaurantes/Chilis/icono.png" class="iconos"  alt=""><h5 class="card-title">Churrasco 250g </h5>
+          </div>
+            <p class="card-text">Carne de res de alta calidad al carbon con ensalada y papas fritas</p>
+            <h5 class="card-title">$18.000 </h5>
+            <a href="#" class="btn btn-primary agregarCarrito" data-id="3" >Añadir al carrito </a>
+          </div>
+        </div>
+
+
+
+
+        <div class="card" style="width: 18rem;">
+          
+          <img src="Basedatos/Restaurantes/Latapa/Entradas/nachos.jpg" class="card-img-top" alt="No disponible">
+          <div class="card-body">
+            <div class="icon">
+            <img src="Basedatos/Restaurantes/Latapa/icono.jpg" class="iconos"  alt=""><h5 class="card-title">Nachos </h5>
+          </div>
+            <p class="card-text">Entrada de nachos en ensalada mexicana a base de guacamole</p>
+            <h5 class="card-title">$12.500 </h5>
+            <a href="#" class="btn btn-primary agregarCarrito" data-id="4">Añadir al carrito </a>
+          </div>
+        </div>
+
+
+
+        <div class="card" style="width: 18rem;">
+          
+          <img src="Basedatos/Restaurantes/CielitoLindo/Mexicana/burritos.jpg" class="card-img-top" alt="No disponible">
+          <div class="card-body">
+            <div class="icon">
+            <img src="Basedatos/Restaurantes/CielitoLindo/icono.jpg" class="iconos"  alt=""><h5 class="card-title">Burritos mixtos </h5>
+          </div>
+            <p class="card-text">Burritos mixto de carne y pollo, pico de gallo,  verduras y guacamole</p>
+            <h5 class="card-title">$15.000 </h5>
+            <a href="#" class="btn btn-primary agregarCarrito" data-id="5">Añadir al carrito </a>
+          </div>
+        </div>
+
+
+
+
+        <div class="card" style="width: 18rem;">
+          
+          <img src="Basedatos/Restaurantes/Chilis/Bebidas/Jugo-fresa.jpg" class="card-img-top" alt="No disponible">
+          <div class="card-body">
+            <div class="icon">
+            <img src="Basedatos/Restaurantes/Chilis/icono.png" class="iconos"  alt=""><h5 class="card-title">Jugo de fresa </h5>
+          </div>
+            <p class="card-text">Jugo natural de  300 ml</p>
+            <h5 class="card-title">$5.000 </h5>
+            <a href="#" class="btn btn-primary agregarCarrito" data-id="6">Añadir al carrito </a>
+          </div>
+        </div> -->
+
+
+
+      </div>
+  
+    </div>
+   
+  
+    
+  
+
+
+  </div>
+
+  <div id="tab" class="d-none">
+    <h1>estas en licores</h1>
+  </div>
+
+  <div id="tab" class="d-none">
+   <h1>estas en mercados
+   </h1>
+  </div>
+  
+ <div id="tab" class="d-none">
+  <form id="formulario">
+    <div id="contacto">
+      <div class="mb-3 form-group">
+      <label for="exampleFormControlInput1" class="form-label">Email</label>
+      <input type="email" class="form-control" id="email" placeholder="name@example.com">
+     </div>
+     <div class="mb-3 form-group">
+      <label for="exampleFormControlInput1" class="form-label">Asunto</label>
+      <input type="text" class="form-control" id="asunto" placeholder="Pedido no llego">
+     </div>
+     <div class="mb-3 form-group">
+      <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+      <textarea class="form-control" id="mensaje" rows="3"></textarea>
+    </div>
+    <div class="mb-3 form-group">
+      <button id="botonEnviar" type="submit" class="btn btn-danger bi bi-send" disabled> Enviar </button>
+      <button id="botonResetear" type="reset" class="btn btn-dark bi bi-trash3"> Borrar todo</button>
+    </div>
+    <div id="spiner" class="d-none d-flex justify-content-center ">
+      <div class="spinner-border text-danger" role="status">
+        <span class="sr-only"></span>
+      </div>
+    </div>  
+  </div>
+</form>
+
+
+   </div>
+    
+</body>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+<script src="js/app.js"></script>
+
+<script src="js/db.js"></script>
+<script src="js/app2.js"></script>
+
+<script src="js/app3.js"></script>
